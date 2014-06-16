@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\Implementation\Adder_r4_n3\simulation\modelsim
+vAdderControl
+!i10b 1
+!s100 JRheAM2l_WDRYfaBN@W_:1
+I;<h]ac^``P_2bzz2MI3F[2
+Vi9`Jn_JVecP=5cn]ETK160
+Z1 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\Implementation\Adder_r4_n3\simulation\modelsim
+w1402324465
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z3 !s108 1402325509.500000
+Z4 !s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v|
+Z5 !s90 -reportprogress|300|-work|work|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v|
+!s101 -O0
+Z6 o-work work -O0
+n@adder@control
+vonline_adder_r4
+!i10b 1
+!s100 ihVD3EVj2@<J^eIBij;RF0
+IG`ck;97I;MgRnUSK9JlP`0
+VUS<C01=Abjfba_jQM62Fo2
+R1
+w1402323111
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+R4
+R5
+!s101 -O0
+R6

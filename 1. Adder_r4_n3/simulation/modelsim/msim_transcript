@@ -1,0 +1,72 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do AdderControl_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AdderControl
+# 
+# Top level modules:
+# 	AdderControl
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module online_adder_r4
+# 
+# Top level modules:
+# 	online_adder_r4
+# 
+vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderControl
+# vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderControl 
+# Loading work.AdderControl
+# Loading work.online_adder_r4
+# do AdderControl_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AdderControl
+# 
+# Top level modules:
+# 	AdderControl
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module online_adder_r4
+# 
+# Top level modules:
+# 	online_adder_r4
+# 
+step -out -current
+# Reset
+# x= x, y= x, z= 0
+# Cycle -1
+# x= 1, y= 2, z= 0
+# Cycle 0
+# x= 2, y=-1, z= 1
+# Cycle 1
+# x=-3, y=-3, z=-1
+# Cycle 2
+# x= 3, y= 3, z= 0
+# Cycle 3
+# x= 0, y= 2, z=-1
+# Cycle 4
+# x=-1, y= 2, z= 2
+# Cycle 5
+# x= 0, y= 0, z= 2
+# Cycle 6
+# x= 0, y= 2, z= 1
+# Cycle 7 - extra
+# x= 0, y= 0, z= 0
+# Break in Module AdderControl at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v line 109

@@ -1,0 +1,7 @@
+module tester_r4 (
+	input  [3:0] testNumber,
+	output reg [(n+1)*c-1:0] x,
+	output reg [(n+1)*c-1:0] y,
+	output reg [(n+1)*c-1:0] z
+);
+

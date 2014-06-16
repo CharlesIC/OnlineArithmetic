@@ -1,0 +1,107 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\Implementation\AdderTest\simulation\modelsim
+vAdderControl
+I0MogHRAlcELJFY=n84>`b3
+VzVlP1HkT]=69b@g`j5mW=3
+Z1 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\Implementation\AdderTest\simulation\modelsim
+w1402928360
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@adder@control
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest} -O0
+!i10b 1
+!s100 ;g^P_mX;m`GgkQO7SNaG62
+!s85 0
+!s108 1402928428.393000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.v|
+!s101 -O0
+vbutton_debouncer
+ID`kdHW_hCL@o4c6fC57B]3
+V9:H?_2nARl[CQJ0g`S]A20
+R1
+w1402778389
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/button_debouncer.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/button_debouncer.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 VjbD[2K@D202bGFJz:I7X1
+!s85 0
+!s108 1402928428.917000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/button_debouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/button_debouncer.v|
+!s101 -O0
+vonline_adder_r4
+II30SgEY2Y@UF<ASXE>Hin3
+V@?;5G@A:;<P9B8Gc<ImcI2
+R1
+w1402927151
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/online_adder_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/online_adder_r4.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Uj0RfJ;?Afaz^gmMJG95R3
+!s85 0
+!s108 1402928428.643000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/online_adder_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/online_adder_r4.v|
+!s101 -O0
+vSEG7_LUT
+IXKcJkeCijHC4homRZ@2Q?0
+VFGO:EJJd_fzMXX3kESM2^2
+R1
+w1402868888
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/SEG7_LUT.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/SEG7_LUT.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@s@e@g7_@l@u@t
+!i10b 1
+!s100 G>HW=K0ML9WH5ezOU`8NJ0
+!s85 0
+!s108 1402928429.122000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/SEG7_LUT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/SEG7_LUT.v|
+!s101 -O0
+vtester_r4
+!i10b 1
+!s100 3JTfUV6TWDmS@X2?Ezkbi0
+I=hieFWSNZaYKDzeWTJ:o22
+Vc6LIhemSQ:Q2bV?3JUn=?3
+R1
+w1402921627
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/tester_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/tester_r4.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1402928429.336000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/tester_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/tester_r4.v|
+!s101 -O0
+R3
+R4

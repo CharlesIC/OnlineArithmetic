@@ -1,0 +1,25 @@
+Quartus II Archive log --	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/Adder_r4_r3_tmp_archive.qarlog
+
+Archive:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/Adder_r4_r3_tmp_archive.qar
+Date:		Sat Jun 14 20:56:09 2014
+Quartus II 64-Bit		13.1.4 Build 182 03/12/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.qsf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/Adder_r4_r3.qpf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/db/AdderControl.cmp.hdb
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/db/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/incremental_db/compiled_partitions/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v
+c:/altera/13.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Jun 14 20:56:11 2014
+Source archive file:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/Adder_r4_r3_tmp_archive.qar
+Archive was extracted into	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/
+		 - successfully.

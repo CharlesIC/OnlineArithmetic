@@ -1,0 +1,28 @@
+Quartus II Archive log --	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderTest_tmp_archive.qarlog
+
+Archive:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderTest_tmp_archive.qar
+Date:		Mon Jun 16 17:59:32 2014
+Quartus II 64-Bit		13.1.4 Build 182 03/12/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.qsf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderControl.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderTest.qpf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/SEG7_LUT.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/assignment_defaults.qdf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/button_debouncer.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/db/AdderControl.cmp.hdb
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/db/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/incremental_db/compiled_partitions/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/online_adder_r4.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/tester_r4.v
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Jun 16 17:59:35 2014
+Source archive file:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest/AdderTest_tmp_archive.qar
+Archive was extracted into	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/AdderTest_r4/
+		 - successfully.
