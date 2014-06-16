@@ -1,0 +1,207 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do AdderControl_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AdderControl
+# 
+# Top level modules:
+# 	AdderControl
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module online_adder_r4
+# 
+# Top level modules:
+# 	online_adder_r4
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module button_debouncer
+# 
+# Top level modules:
+# 	button_debouncer
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEG7_LUT
+# 
+# Top level modules:
+# 	SEG7_LUT
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tester_r4
+# 
+# Top level modules:
+# 	tester_r4
+# 
+vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderControl
+# vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderControl 
+# Loading work.AdderControl
+# Loading work.button_debouncer
+# Loading work.SEG7_LUT
+# Loading work.online_adder_r4
+# Loading work.tester_r4
+# do AdderControl_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AdderControl
+# 
+# Top level modules:
+# 	AdderControl
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module online_adder_r4
+# 
+# Top level modules:
+# 	online_adder_r4
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module button_debouncer
+# 
+# Top level modules:
+# 	button_debouncer
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEG7_LUT
+# 
+# Top level modules:
+# 	SEG7_LUT
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/3.\ AdderTest_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tester_r4
+# 
+# Top level modules:
+# 	tester_r4
+# 
+add wave -position insertpoint  \
+sim:/AdderControl/CLOCK_50
+add wave -position insertpoint  \
+sim:/AdderControl/SW
+add wave -position insertpoint  \
+sim:/AdderControl/zi
+add wave -position insertpoint  \
+sim:/AdderControl/uut/zi
+force -freeze sim:/AdderControl/CLOCK_50 1 0, 0 {50 ps} -r 100
+force -freeze sim:/AdderControl/SW 0000000001 0
+step -over
+run -continue
+# Break in Module online_adder_r4 at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v line 14
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+run -continue
+# Break in Module online_adder_r4 at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v line 14
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+run -continue
+step -over
+step -over
+# Next activity is in 50 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+run -continue
+step -over
+step -over
+# Next activity is in 50 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -out
+# Next activity is in 50 ps.
+step -out
+step -out
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 50 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -out
+step -out
+step -out
+# Next activity is in 50 ps.
+step -out
+step -over
+step -over

@@ -1,4 +1,5 @@
 # Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
 # do AdderControl_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -10,13 +11,13 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/1.\ Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/AdderControl.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module AdderControl
 # 
 # Top level modules:
 # 	AdderControl
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/1.\ Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/online_adder_r4.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module online_adder_r4
 # 
@@ -35,38 +36,136 @@ vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui wo
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/1.\ Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/AdderControl.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module AdderControl
 # 
 # Top level modules:
 # 	AdderControl
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/Implementation/Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/1.\ Adder_r4_n3 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/online_adder_r4.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module online_adder_r4
 # 
 # Top level modules:
 # 	online_adder_r4
 # 
-step -out -current
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # Reset
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
 # x= x, y= x, z= 0
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # Cycle -1
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # x= 1, y= 2, z= 0
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # Cycle 0
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
 # x= 2, y=-1, z= 1
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # Cycle 1
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
 # x=-3, y=-3, z=-1
+add dataflow  \
+sim:/AdderControl/result
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over
+step -over
+step -over
 # Cycle 2
-# x= 3, y= 3, z= 0
-# Cycle 3
-# x= 0, y= 2, z=-1
-# Cycle 4
-# x=-1, y= 2, z= 2
-# Cycle 5
-# x= 0, y= 0, z= 2
-# Cycle 6
-# x= 0, y= 2, z= 1
-# Cycle 7 - extra
-# x= 0, y= 0, z= 0
-# Break in Module AdderControl at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v line 109
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 100 ps.
+step -over

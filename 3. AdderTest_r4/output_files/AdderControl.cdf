@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16F484) Path("C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/output_files/") File("AdderControl.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16F484) Path("C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/output_files/") File("AdderControl.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

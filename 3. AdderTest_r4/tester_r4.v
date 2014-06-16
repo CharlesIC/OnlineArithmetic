@@ -26,6 +26,13 @@ always @(testSelect)
 				z = {3'd1, -3'd1, 3'd0, -3'd1, 3'd2, 3'd2, 3'd1};
 			end
 			
+		10'b0000000010:
+			begin
+				x = {3'd0, 3'd0, 3'd0, 3'd1, 3'd2, -3'd2};
+				y = {3'd0, 3'd0, 3'd0, 3'd1, -3'd1, 3'd3};
+				z = {3'd0, 3'd0, 3'd0, 3'd0, 3'd2, 3'd1, 3'd1};
+			end
+			
 		default:
 			begin
 				x = 0;

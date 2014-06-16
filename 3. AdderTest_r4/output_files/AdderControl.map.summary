@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Jun 16 18:48:10 2014
+Analysis & Synthesis Status : Successful - Mon Jun 16 23:52:49 2014
 Quartus II 64-Bit Version : 13.1.4 Build 182 03/12/2014 SJ Web Edition
 Revision Name : AdderControl
 Top-level Entity Name : AdderControl
 Family : Cyclone III
-Total logic elements : 244
-    Total combinational functions : 207
-    Dedicated logic registers : 106
-Total registers : 106
+Total logic elements : 376
+    Total combinational functions : 350
+    Dedicated logic registers : 120
+Total registers : 120
 Total pins : 56
 Total virtual pins : 0
 Total memory bits : 0

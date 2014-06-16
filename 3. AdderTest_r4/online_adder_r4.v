@@ -53,7 +53,7 @@ task SUM;
 	input  signed [2:0] t, w;
 	output signed [2:0] zi;
 begin
-	zi <= t + w;
+	zi = t + w;
 end
 endtask
 

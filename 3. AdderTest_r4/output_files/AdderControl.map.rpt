@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AdderControl
-Mon Jun 16 18:48:10 2014
+Mon Jun 16 23:52:49 2014
 Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
 
 
@@ -13,9 +13,9 @@ Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |AdderControl|i
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Parameter Settings for User Entity Instance: Top-level Entity: |AdderControl
  13. Parameter Settings for User Entity Instance: button_debouncer:button_0
@@ -23,17 +23,16 @@ Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
  15. Parameter Settings for User Entity Instance: button_debouncer:button_2
  16. Parameter Settings for User Entity Instance: online_adder_r4:uut
  17. Parameter Settings for User Entity Instance: tester_r4:addTest
- 18. Port Connectivity Checks: "tester_r4:addTest"
- 19. Port Connectivity Checks: "SEG7_LUT:SEG3"
- 20. Port Connectivity Checks: "SEG7_LUT:SEG2"
- 21. Port Connectivity Checks: "SEG7_LUT:SEG1"
- 22. Port Connectivity Checks: "SEG7_LUT:SEG0"
- 23. Port Connectivity Checks: "button_debouncer:button_2"
- 24. Port Connectivity Checks: "button_debouncer:button_1"
- 25. Port Connectivity Checks: "button_debouncer:button_0"
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 18. Port Connectivity Checks: "SEG7_LUT:SEG3"
+ 19. Port Connectivity Checks: "SEG7_LUT:SEG2"
+ 20. Port Connectivity Checks: "SEG7_LUT:SEG1"
+ 21. Port Connectivity Checks: "SEG7_LUT:SEG0"
+ 22. Port Connectivity Checks: "button_debouncer:button_2"
+ 23. Port Connectivity Checks: "button_debouncer:button_1"
+ 24. Port Connectivity Checks: "button_debouncer:button_0"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+ 27. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -59,15 +58,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 16 18:48:10 2014      ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 16 23:52:49 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.4 Build 182 03/12/2014 SJ Web Edition ;
 ; Revision Name                      ; AdderControl                               ;
 ; Top-level Entity Name              ; AdderControl                               ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 244                                        ;
-;     Total combinational functions  ; 207                                        ;
-;     Dedicated logic registers      ; 106                                        ;
-; Total registers                    ; 106                                        ;
+; Total logic elements               ; 376                                        ;
+;     Total combinational functions  ; 350                                        ;
+;     Dedicated logic registers      ; 120                                        ;
+; Total registers                    ; 120                                        ;
 ; Total pins                         ; 56                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -180,17 +179,17 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; AdderControl.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/AdderControl.v     ;         ;
-; online_adder_r4.v                ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/online_adder_r4.v  ;         ;
-; button_debouncer.v               ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/button_debouncer.v ;         ;
-; SEG7_LUT.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/SEG7_LUT.v         ;         ;
-; tester_r4.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/tester_r4.v        ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; AdderControl.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v     ;         ;
+; online_adder_r4.v                ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v  ;         ;
+; button_debouncer.v               ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v ;         ;
+; SEG7_LUT.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v         ;         ;
+; tester_r4.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v        ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -198,28 +197,28 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 244            ;
+; Estimated Total logic elements              ; 376            ;
 ;                                             ;                ;
-; Total combinational functions               ; 207            ;
+; Total combinational functions               ; 350            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 129            ;
-;     -- 3 input functions                    ; 24             ;
-;     -- <=2 input functions                  ; 54             ;
+;     -- 4 input functions                    ; 234            ;
+;     -- 3 input functions                    ; 65             ;
+;     -- <=2 input functions                  ; 51             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 175            ;
+;     -- normal mode                          ; 318            ;
 ;     -- arithmetic mode                      ; 32             ;
 ;                                             ;                ;
-; Total registers                             ; 106            ;
-;     -- Dedicated logic registers            ; 106            ;
+; Total registers                             ; 120            ;
+;     -- Dedicated logic registers            ; 120            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 56             ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 106            ;
-; Total fan-out                               ; 1107           ;
-; Average fan-out                             ; 2.60           ;
+; Maximum fan-out                             ; 120            ;
+; Total fan-out                               ; 1721           ;
+; Average fan-out                             ; 2.96           ;
 +---------------------------------------------+----------------+
 
 
@@ -228,7 +227,7 @@ applicable agreement for further details.
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
-; |AdderControl                  ; 207 (117)         ; 106 (64)     ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |AdderControl                           ; work         ;
+; |AdderControl                  ; 350 (255)         ; 120 (78)     ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |AdderControl                           ; work         ;
 ;    |SEG7_LUT:SEG0|             ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|SEG7_LUT:SEG0             ; work         ;
 ;    |SEG7_LUT:SEG1|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|SEG7_LUT:SEG1             ; work         ;
 ;    |SEG7_LUT:SEG2|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|SEG7_LUT:SEG2             ; work         ;
@@ -236,27 +235,10 @@ applicable agreement for further details.
 ;    |button_debouncer:button_0| ; 36 (36)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|button_debouncer:button_0 ; work         ;
 ;    |button_debouncer:button_1| ; 0 (0)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|button_debouncer:button_1 ; work         ;
 ;    |button_debouncer:button_2| ; 7 (7)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|button_debouncer:button_2 ; work         ;
-;    |online_adder_r4:uut|       ; 8 (8)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|online_adder_r4:uut       ; work         ;
-;    |tester_r4:addTest|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|tester_r4:addTest         ; work         ;
+;    |online_adder_r4:uut|       ; 11 (11)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|online_adder_r4:uut       ; work         ;
+;    |tester_r4:addTest|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |AdderControl|tester_r4:addTest         ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------+
-; State Machine - |AdderControl|i                                                ;
-+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-; Name   ; i.0111 ; i.0000 ; i.0101 ; i.0100 ; i.0011 ; i.0010 ; i.0001 ; i.0110 ;
-+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-; i.0110 ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ;
-; i.0001 ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 1      ;
-; i.0010 ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 1      ;
-; i.0011 ; 0      ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 1      ;
-; i.0100 ; 0      ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 1      ;
-; i.0101 ; 0      ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 1      ;
-; i.0000 ; 0      ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ;
-; i.0111 ; 1      ; 0      ; 0      ; 0      ; 0      ; 0      ; 0      ; 1      ;
-+--------+--------+--------+--------+--------+--------+--------+--------+--------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -313,12 +295,7 @@ Encoding Type:  One-Hot
 ; button_debouncer:button_2|counter[1]   ; Merged with button_debouncer:button_0|counter[1]  ;
 ; button_debouncer:button_1|counter[0]   ; Merged with button_debouncer:button_0|counter[0]  ;
 ; button_debouncer:button_2|counter[0]   ; Merged with button_debouncer:button_0|counter[0]  ;
-; yi[1]                                  ; Merged with xi[1]                                 ;
-; i~9                                    ; Lost fanout                                       ;
-; i~10                                   ; Lost fanout                                       ;
-; i~11                                   ; Lost fanout                                       ;
-; i~12                                   ; Lost fanout                                       ;
-; Total Number of Removed Registers = 57 ;                                                   ;
+; Total Number of Removed Registers = 52 ;                                                   ;
 +----------------------------------------+---------------------------------------------------+
 
 
@@ -327,14 +304,24 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 106   ;
-; Number of registers using Synchronous Clear  ; 17    ;
-; Number of registers using Synchronous Load   ; 9     ;
+; Total registers                              ; 120   ;
+; Number of registers using Synchronous Clear  ; 35    ;
+; Number of registers using Synchronous Load   ; 13    ;
 ; Number of registers using Asynchronous Clear ; 21    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 58    ;
+; Number of registers using Clock Enable       ; 77    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; ready                                  ; 21      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -344,13 +331,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |AdderControl|iDIG_0[1]    ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |AdderControl|iDIG_1[1]    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |AdderControl|iDIG_2[2]    ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |AdderControl|xi[2]        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |AdderControl|Mux7         ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |AdderControl|Mux14        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |AdderControl|Mux12        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |AdderControl|Mux9         ;
-; 9:1                ; 7 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |AdderControl|i            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |AdderControl|iDIG_2[1]    ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |AdderControl|i[1]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |AdderControl|Mux5         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |AdderControl|Mux16        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |AdderControl|Mux10        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -423,16 +408,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "tester_r4:addTest"                                                                  ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; x    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------+
 ; Port Connectivity Checks: "SEG7_LUT:SEG3"            ;
 +---------+--------+----------+------------------------+
@@ -501,7 +476,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -511,7 +486,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
-    Info: Processing started: Mon Jun 16 18:48:08 2014
+    Info: Processing started: Mon Jun 16 23:52:45 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AdderTest -c AdderControl
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Warning (10229): Verilog HDL Expression warning at AdderControl.v(208): truncated literal to match 6 bits
@@ -531,10 +506,6 @@ Warning (10036): Verilog HDL or VHDL warning at AdderControl.v(45): object "coun
 Warning (10230): Verilog HDL assignment warning at AdderControl.v(44): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at AdderControl.v(45): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at AdderControl.v(59): truncated value with size 32 to match size of target (10)
-Warning (10230): Verilog HDL assignment warning at AdderControl.v(281): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at AdderControl.v(288): truncated value with size 32 to match size of target (3)
-Warning (10175): Verilog HDL warning at AdderControl.v(317): ignoring unsupported system task
-Warning (10030): Net "result[20..15]" at AdderControl.v(64) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "button_debouncer" for hierarchy "button_debouncer:button_0"
 Warning (10230): Verilog HDL assignment warning at button_debouncer.v(35): truncated value with size 32 to match size of target (1)
 Warning (10230): Verilog HDL assignment warning at button_debouncer.v(36): truncated value with size 32 to match size of target (21)
@@ -552,24 +523,23 @@ Warning (10230): Verilog HDL assignment warning at online_adder_r4.v(43): trunca
 Warning (10230): Verilog HDL assignment warning at online_adder_r4.v(46): truncated value with size 4 to match size of target (3)
 Info (12128): Elaborating entity "tester_r4" for hierarchy "tester_r4:addTest"
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/output_files/AdderControl.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/output_files/AdderControl.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 303 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 437 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 247 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 479 megabytes
-    Info: Processing ended: Mon Jun 16 18:48:10 2014
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 381 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 478 megabytes
+    Info: Processing ended: Mon Jun 16 23:52:49 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r 4/output_files/AdderControl.map.smsg.
+The suppressed messages can be found in C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/output_files/AdderControl.map.smsg.
 
 

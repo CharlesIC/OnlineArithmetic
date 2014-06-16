@@ -135,7 +135,7 @@ SEG7_LUT SEG3(
 // 	Adder UUT (Unit Under Test)
 //*********************************
 online_adder_r4 uut(
-	.clk(clock),
+	.clk(~clock),
 	.reset(adder_reset),
 	.en(adder_enable),
 	.xi(xi),
@@ -249,130 +249,111 @@ end
 //========================================
 reg [9:0] oldTest;
 reg [3:0] i;							// Parametrise size in Java +1
+reg ready;
 
 initial begin
-	i = 5;
+	i = 0;
 	xi = 0;
 	yi = 0;
+	ready = 1;
+	oldTest = 0;
+	adder_reset = 0;
 	adder_enable = 0;
 end
 
 always @(posedge clock)
 begin
-// Reset adder
-	if (i == 5) begin
-		adder_enable = 0;
-		adder_reset = 0;
-		i <= 6;
+	if (oldTest != SW || !ready) begin
+		if (ready) begin
+			adder_enable = 0;
+			adder_reset = 1;
+			oldTest = SW;
+			result = 0;
+			ready = 0;
+			i <= 0;
+			end
+		else begin
+			adder_reset = 0;
+			adder_enable = 0;
+//			xi <= x[c*(n-i)-1];
+//			yi <= y[c*(n-i)-1];
+//			adder_enable <= 1;
+			ready = 1;
+			end
 		end
-	else if (i == 6) begin
-		adder_reset = 1;
-		i <= 7;
-		end
-	else if (i == 7) begin
-		adder_reset = 0;
-		xi <= 1;
-		yi <= 1;
-		adder_enable <= 1;
-		i <= 0;
-		end
-	else if (i == 0) begin
-		xi <= 2;
-		yi <= -1;
-		//adder_clock = 1;
-		result[14:12] <= zi;
-		$display("zi = %d", zi);
-		i <= 1;
-		end
-	else if (i == 1) begin
-		xi <= -2;
-		yi <= 3;
-		//adder_clock = 1;
-		result[11:9] <= zi;
-		$display("zi = %d", zi);
-		i <= 2;
-		end
-	else if (i == 2) begin
-		xi <= 0;
-		yi <= 0;
-		//adder_clock = 1;
-		result[8:6] <= zi;
-		$display("zi = %d", zi);
-		i <= 3;
-		end
-	else if (i == 3) begin
-		xi <= 0;
-		yi <= 0;
-		//adder_clock = 1;
-		result[5:3] <= zi;
-		$display("zi = %d", zi);
-		i <= 4;
-		end
-	else if (i == 4) begin
-		//adder_clock = 1;
-		result[2:0] <= zi;
-		$display("zi = %d", zi);
-		i <= 5;
-		adder_enable <= 0;
-		$stop;
-		end
+	else begin
+		if (i < cycles) begin
+			xi = x[c*(n-i)-1-:c];
+			yi = y[c*(n-i)-1-:c];
+			adder_enable <= 1;
+			result[c*(n+1-i)+2-:c] = zi;
+			i <= i + 1'b1;
+			end
+		else begin
+			adder_enable <= 0;
+			end
+	end
 end
-
-//always @(clock)
-//begin
-//	if (oldTest != SW) begin
-//		oldTest = SW;
-//		
-//		xi = SW[9:7];
-//		yi = SW[6:4];
-//		
-//		result = 0;
-//		result[8:6] = yi;
-//		result[11:9] = xi;
-//		
-//		i <= 0;
-//		end
-//	else begin
-//		if (i == 0) begin
-//			result[5:3] = zi;
-//			xi <= 0;
-//			yi <= 0;
-//			i = 1;
-//			end
-//		else if (i == 1)
-//			result[2:0] = zi;
-//	end
-//end
 
 //always @(posedge clock)
 //begin
-//	if (oldTest != SW)				// New test has been selected
-//		begin
-//			result = 0;
-//			oldTest = SW;
-//			i = 0;
+//// Reset adder
+//	if (i == 5) begin
+//		adder_enable = 0;
+//		adder_reset = 0;
+//		i <= 6;
 //		end
-//	else if (i < cycles)
-//		begin
-//			if (i == 0)
-//				begin
-//					xi = 0;
-//					yi = 0;
-//				end
-//			else if (i == 1)
-//				begin
-//					xi = 1;
-//					yi = 0;
-//				end
-//			else
-//				begin
-//					xi = 0;
-//					yi = 0;
-//				end
-//		
-//			result[c*(n+1-i)+2-:c] = zi;
-//			i = i + 1;
+//	else if (i == 6) begin
+//		adder_reset = 1;
+//		i <= 7;
 //		end
-//end		
+//	else if (i == 7) begin
+//		adder_reset = 0;
+//		xi <= x[8:6];
+//		yi <= y[8:6];
+//		adder_enable <= 1;
+//		i <= 0;
+//		end
+//	else if (i == 0) begin
+//		xi <= x[5:3];
+//		yi <= y[5:3];
+//		//adder_clock = 1;
+//		result[14:12] <= zi;
+//		$display("zi = %d", zi);
+//		i <= 1;
+//		end
+//	else if (i == 1) begin
+//		xi <= x[2:0];
+//		yi <= y[2:0];
+//		//adder_clock = 1;
+//		result[11:9] <= zi;
+//		$display("zi = %d", zi);
+//		i <= 2;
+//		end
+//	else if (i == 2) begin
+//		xi <= 0;
+//		yi <= 0;
+//		//adder_clock = 1;
+//		result[8:6] <= zi;
+//		$display("zi = %d", zi);
+//		i <= 3;
+//		end
+//	else if (i == 3) begin
+//		xi <= 0;
+//		yi <= 0;
+//		//adder_clock = 1;
+//		result[5:3] <= zi;
+//		$display("zi = %d", zi);
+//		i <= 4;
+//		end
+//	else if (i == 4) begin
+//		//adder_clock = 1;
+//		result[2:0] <= zi;
+//		$display("zi = %d", zi);
+//		i <= 5;
+//		adder_enable <= 0;
+//		$stop;
+//		end
+//end
 
 endmodule

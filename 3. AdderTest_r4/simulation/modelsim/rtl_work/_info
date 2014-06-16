@@ -1,0 +1,107 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\OnlineArithmetic\3. AdderTest_r4\simulation\modelsim
+vAdderControl
+IdPYcJaznVbjf`bUV8[R9Z0
+VzVlP1HkT]=69b@g`j5mW=3
+Z1 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\OnlineArithmetic\3. AdderTest_r4\simulation\modelsim
+w1402958613
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@adder@control
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4} -O0
+!i10b 1
+!s100 IYTbj8D?D5o_O=l21@@612
+!s85 0
+!s108 1402958744.502000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/AdderControl.v|
+!s101 -O0
+vbutton_debouncer
+IljO0C]eVDV=g:mIZh5FdA2
+V9:H?_2nARl[CQJ0g`S]A20
+R1
+w1402778389
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4@>V_4nVNbj[716oc0z8R2
+!s85 0
+!s108 1402958745.124000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/button_debouncer.v|
+!s101 -O0
+vonline_adder_r4
+IQVRdFCP:cTGjLT`F:SO4N1
+V@?;5G@A:;<P9B8Gc<ImcI2
+R1
+w1402948135
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 nkU_>gZ1>KCWiTDI2eKWW2
+!s85 0
+!s108 1402958744.898000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/online_adder_r4.v|
+!s101 -O0
+vSEG7_LUT
+IPG1K_m:X=G:oWJ807m?S32
+VFGO:EJJd_fzMXX3kESM2^2
+R1
+w1402868888
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@s@e@g7_@l@u@t
+!i10b 1
+!s100 D=`3MM2MAE_TnI_[mJOif2
+!s85 0
+!s108 1402958745.369000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/SEG7_LUT.v|
+!s101 -O0
+vtester_r4
+!i10b 1
+!s100 YYCEZ8dZTT2<N]BiMBRoW3
+I7S9=LoNC2fVM;USRaKj[21
+Vc6LIhemSQ:Q2bV?3JUn=?3
+R1
+w1402942663
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1402958745.693000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/3. AdderTest_r4/tester_r4.v|
+!s101 -O0
+R3
+R4
