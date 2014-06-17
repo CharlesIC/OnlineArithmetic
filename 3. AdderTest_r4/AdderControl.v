@@ -38,16 +38,18 @@ parameter cycles = n + delay;
 //		REG/WIRE declarations
 //===================================
 wire BUTTON[2:0];						// Button after debounce
+reg  out_BUTTON_0;					// Button0 register output
 reg  out_BUTTON_1;					// Button1 register output
 reg  out_BUTTON_2;					// Button2 register output
 
+wire counter_0 = ((BUTTON[0] == 0) && (out_BUTTON_0 == 1)) ?1:0;			// Counter for Button[1]
 wire counter_1 = ((BUTTON[1] == 0) && (out_BUTTON_1 == 1)) ?1:0;			// Counter for Button[1]
 wire counter_2 = ((BUTTON[2] == 0) && (out_BUTTON_2 == 1)) ?1:0;			// Counter for Button[2]
 
 wire clock = CLOCK_50;				// Clock signal
-wire reset = BUTTON[0];				// Reset signal
+//wire reset = BUTTON[0];				// Reset signal
 reg  adder_reset;						// Adder reset signal
-reg  adder_enable;						// Adder clock signal
+reg  adder_enable;					// Adder enable signal
 
 reg [5:0] iDIG_0;						// 7 Seg Digit 0
 reg [5:0] iDIG_1;						// 7 Seg Digit 1
@@ -156,6 +158,7 @@ tester_r4 addTest(
 //========================================
 always @ (posedge clock)
 	begin
+		out_BUTTON_0 <= BUTTON[0];
 		out_BUTTON_1 <= BUTTON[1];
 		out_BUTTON_2 <= BUTTON[2];
 		
@@ -170,75 +173,77 @@ always @ (posedge clock)
 //========================================
 // 			Display process
 //========================================
-always @ (posedge clock or negedge reset)
+always @ (posedge clock)
 begin
-	if (!reset)
+	if (counter_1)
+		if (shift + (c*4) >= bits)
+			begin
+				// Reset LEDs to show first 4 digits
+				section = 0;
+				LEDG = 0;
+			end
+		else
+			section = section + 1'd1;
+	else if (counter_0)
+		if (section == 0)
+			begin
+				section = 1;
+				LEDG = 2'b11;						// ceiling(n+1) / 4  --JAVA-- 
+			end
+		else
+			begin
+				section = section - 1'd1;
+				LEDG = 1'b1;						// 2**section - 1 --JAVA--
+			end
+	else if (!BUTTON[2])
 		begin
-			// Reset LEDs to show first 4 digits
-			section = 0;
-			LEDG = 0;
-		end
-	else
-		begin
-			if (counter_1)
-				if (shift + (c*4) >= bits)
-					begin
-						// Reset LEDs to show first 4 digits
-						section = 0;
-						LEDG = 0;
-					end
-				else
-					section = section + 1'd1;
-			else if (!BUTTON[2])
+			if (correct)
 				begin
-					if (correct)
-						begin
-							// Display "Corr" for "Correct"
-							iDIG_3 = 6'hC;			// 'C'
-							iDIG_2 = 6'h0;			// '0'
-							iDIG_1 = 6'h2F;		// 'r'
-							iDIG_0 = 6'h2F;		// 'r'
-						end
-					else
-						begin
-							// Display "Err" for "Error"
-							iDIG_3 = 6'hE;			// 'E'
-							iDIG_2 = 6'h2F;		// 'r'
-							iDIG_1 = 6'h2F;		// 'r'
-							iDIG_0 = 6'h7F;		// segment off
-						end
+					// Display "Corr" for "Correct"
+					iDIG_3 = 6'hC;			// 'C'
+					iDIG_2 = 6'h0;			// '0'
+					iDIG_1 = 6'h2F;		// 'r'
+					iDIG_0 = 6'h2F;		// 'r'
 				end
 			else
 				begin
-					LEDG[section] = 1;
-													// Parametrise 3'b000 in Java
-					if (~HEX0_DP) begin
-						iDIG_0 <= {3'b000, -result[shift+:c]};
-						end
-					else begin
-						iDIG_0 <=  result[shift+:c];
-						end
-						
-					if (~HEX1_DP) begin
-						iDIG_1 <= {3'b000, -result[shift+c+:c]};
-						end
-					else begin
-						iDIG_1 <=  result[shift+c+:c];
-						end
-						
-					if (~HEX2_DP) begin
-						iDIG_2 <= {3'b000, -result[shift+2*c+:c]};
-						end
-					else begin
-						iDIG_2 <=  result[shift+2*c+:c];
-						end
-						
-					if (~HEX3_DP) begin
-						iDIG_3 <= {3'b000, -result[shift+3*c+:c]};
-						end
-					else begin
-						iDIG_3 <=  result[shift+3*c+:c];
-						end
+					// Display "Err" for "Error"
+					iDIG_3 = 6'hE;			// 'E'
+					iDIG_2 = 6'h2F;		// 'r'
+					iDIG_1 = 6'h2F;		// 'r'
+					iDIG_0 = 6'h7F;		// segment off
+				end
+		end
+	else
+		begin
+			LEDG[section] = 1;
+											// Parametrise 3'b000 in Java
+			if (~HEX0_DP) begin
+				iDIG_0 <= {3'b000, -result[shift+:c]};
+				end
+			else begin
+				iDIG_0 <=  result[shift+:c];
+				end
+				
+			if (~HEX1_DP) begin
+				iDIG_1 <= {3'b000, -result[shift+c+:c]};
+				end
+			else begin
+				iDIG_1 <=  result[shift+c+:c];
+				end
+				
+			if (~HEX2_DP) begin
+				iDIG_2 <= {3'b000, -result[shift+2*c+:c]};
+				end
+			else begin
+				iDIG_2 <=  result[shift+2*c+:c];
+				end
+				
+			if (~HEX3_DP) begin
+				iDIG_3 <= {3'b000, -result[shift+3*c+:c]};
+				end
+			else begin
+				iDIG_3 <=  result[shift+3*c+:c];
 				end
 		end
 end
@@ -274,10 +279,7 @@ begin
 			end
 		else begin
 			adder_reset = 0;
-			adder_enable = 0;
-//			xi <= x[c*(n-i)-1];
-//			yi <= y[c*(n-i)-1];
-//			adder_enable <= 1;
+			adder_enable = 1;
 			ready = 1;
 			end
 		end
@@ -285,7 +287,6 @@ begin
 		if (i < cycles) begin
 			xi = x[c*(n-i)-1-:c];
 			yi = y[c*(n-i)-1-:c];
-			adder_enable <= 1;
 			result[c*(n+1-i)+2-:c] = zi;
 			i <= i + 1'b1;
 			end
@@ -294,66 +295,5 @@ begin
 			end
 	end
 end
-
-//always @(posedge clock)
-//begin
-//// Reset adder
-//	if (i == 5) begin
-//		adder_enable = 0;
-//		adder_reset = 0;
-//		i <= 6;
-//		end
-//	else if (i == 6) begin
-//		adder_reset = 1;
-//		i <= 7;
-//		end
-//	else if (i == 7) begin
-//		adder_reset = 0;
-//		xi <= x[8:6];
-//		yi <= y[8:6];
-//		adder_enable <= 1;
-//		i <= 0;
-//		end
-//	else if (i == 0) begin
-//		xi <= x[5:3];
-//		yi <= y[5:3];
-//		//adder_clock = 1;
-//		result[14:12] <= zi;
-//		$display("zi = %d", zi);
-//		i <= 1;
-//		end
-//	else if (i == 1) begin
-//		xi <= x[2:0];
-//		yi <= y[2:0];
-//		//adder_clock = 1;
-//		result[11:9] <= zi;
-//		$display("zi = %d", zi);
-//		i <= 2;
-//		end
-//	else if (i == 2) begin
-//		xi <= 0;
-//		yi <= 0;
-//		//adder_clock = 1;
-//		result[8:6] <= zi;
-//		$display("zi = %d", zi);
-//		i <= 3;
-//		end
-//	else if (i == 3) begin
-//		xi <= 0;
-//		yi <= 0;
-//		//adder_clock = 1;
-//		result[5:3] <= zi;
-//		$display("zi = %d", zi);
-//		i <= 4;
-//		end
-//	else if (i == 4) begin
-//		//adder_clock = 1;
-//		result[2:0] <= zi;
-//		$display("zi = %d", zi);
-//		i <= 5;
-//		adder_enable <= 0;
-//		$stop;
-//		end
-//end
 
 endmodule
