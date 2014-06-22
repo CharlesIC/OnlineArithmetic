@@ -1,5 +1,5 @@
 Flow report for AdderControl
-Sun Jun 22 19:55:23 2014
+Mon Jun 23 00:24:52 2014
 Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sun Jun 22 19:55:23 2014      ;
+; Flow Status                        ; Successful - Mon Jun 23 00:24:52 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.4 Build 182 03/12/2014 SJ Web Edition ;
 ; Revision Name                      ; AdderControl                               ;
 ; Top-level Entity Name              ; AdderSimulation                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/22/2014 19:55:04 ;
+; Start date & time ; 06/23/2014 00:24:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AdderControl        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-----------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name     ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220713149271071.140346330406448       ; --            ; --              ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220713149271071.140347947203596       ; --            ; --              ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --              ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --              ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --              ; eda_simulation ;
@@ -98,11 +98,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 466 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:06     ; 1.2                     ; 879 MB              ; 00:00:07                           ;
+; Fitter                    ; 00:00:06     ; 1.2                     ; 883 MB              ; 00:00:07                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 455 MB              ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 494 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 410 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:13                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 410 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

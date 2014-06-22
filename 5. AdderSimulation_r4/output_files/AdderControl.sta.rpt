@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for AdderControl
-Sun Jun 22 19:55:21 2014
+Mon Jun 23 00:24:49 2014
 Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
 
 
@@ -337,7 +337,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
-    Info: Processing started: Sun Jun 22 19:55:19 2014
+    Info: Processing started: Mon Jun 23 00:24:47 2014
 Info: Command: quartus_sta AdderSimulation -c AdderControl
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -386,7 +386,7 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 494 megabytes
-    Info: Processing ended: Sun Jun 22 19:55:21 2014
+    Info: Processing ended: Mon Jun 23 00:24:49 2014
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

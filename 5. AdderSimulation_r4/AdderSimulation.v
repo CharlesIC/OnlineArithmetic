@@ -1,3 +1,7 @@
+// Simulation time unit = 1 ns
+// Simulation timestep  = 10 ps
+`timescale 1ns/10ps
+
 module AdderSimulation (
 	input CLOCK_50
 );
@@ -22,7 +26,7 @@ reg  adder_clock;						// Adder clock signal
 // Test variables //
 wire signed [c-1:0] zi;
 reg  signed [c-1:0] xi, yi;
-reg  signed [(n+delay)*c-1:0] result;
+reg  signed [cycles*c-1:0] result;
 
 //wire signed [n*c-1:-delay*c] x, y;
 wire signed [n*c-1:0] x, y;
@@ -76,7 +80,10 @@ initial begin
 		adder_reset = 0;
 		adder_enable = 1;
 		
-		$display("x = %d, y = %d", x, y);
+		//$display("x = %d, y = %d", x, y);
+		$write("x ="); displayNumber(x); $write(", ");
+		$write("y ="); displayNumber(y);
+		$display();
 		
 		i = 0;
 		repeat (cycles) begin
@@ -101,7 +108,9 @@ initial begin
 			$display("xi = %d, yi = %d, zi = %d", xi, yi, zi);
 		end
 		
-		$display("z = %d", result[(n+1)*c-1:0]);
+		//$display("z = %d", result[(n+1)*c-1:0]);
+		$write("z ="); displayNumber(result[(n+1)*c-1:0]);
+		$display();
 		if (correct) $display("Correct\n");
 		else			 $display("Error\n");
 		
@@ -112,5 +121,19 @@ initial begin
 	// End simulation
 	$stop;
 end
+
+task displayNumber;
+	input signed [(n+1)*c-1:0] num;		// number the display
+	reg signed [c-1:0] digit;
+	reg [3:0] i;								// Parametrise size in Java
+begin
+	i = 0;
+	repeat (n+1) begin
+		digit = num[c*(n+1-i)-1-:c];
+		$write(" %d", digit);
+		i = i + 1'b1;
+	end
+end
+endtask
 
 endmodule

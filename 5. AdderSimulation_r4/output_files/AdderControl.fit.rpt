@@ -1,5 +1,5 @@
 Fitter report for AdderControl
-Sun Jun 22 19:55:13 2014
+Mon Jun 23 00:24:41 2014
 Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
 
 
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sun Jun 22 19:55:13 2014      ;
+; Fitter Status                      ; Successful - Mon Jun 23 00:24:41 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.4 Build 182 03/12/2014 SJ Web Edition ;
 ; Revision Name                      ; AdderControl                               ;
 ; Top-level Entity Name              ; AdderSimulation                            ;
@@ -1172,8 +1172,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/output_files/AdderControl.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 879 megabytes
-    Info: Processing ended: Sun Jun 22 19:55:14 2014
+    Info: Peak virtual memory: 883 megabytes
+    Info: Processing ended: Mon Jun 23 00:24:42 2014
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 

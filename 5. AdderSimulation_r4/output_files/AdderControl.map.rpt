@@ -1,5 +1,5 @@
 Analysis & Synthesis report for AdderControl
-Sun Jun 22 19:55:05 2014
+Mon Jun 23 00:24:33 2014
 Quartus II 64-Bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
 
 
@@ -46,7 +46,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 22 19:55:05 2014      ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 23 00:24:33 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.4 Build 182 03/12/2014 SJ Web Edition ;
 ; Revision Name                      ; AdderControl                               ;
 ; Top-level Entity Name              ; AdderSimulation                            ;
@@ -303,7 +303,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
-    Info: Processing started: Sun Jun 22 19:55:03 2014
+    Info: Processing started: Mon Jun 23 00:24:31 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AdderSimulation -c AdderControl
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file addersimulation.v
@@ -318,104 +318,108 @@ Info (12021): Found 1 design units, including 1 entities, in source file seg7_lu
 Info (12021): Found 1 design units, including 1 entities, in source file tester_r4.v
     Info (12023): Found entity 1: tester_r4
 Info (12127): Elaborating entity "AdderSimulation" for the top level hierarchy
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(79): x =      0, y =      0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(101): xi = 0, yi = 0, zi = 0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(104): z =       0
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(105): Correct\n
-Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(106): Error\n
-Warning (10175): Verilog HDL warning at AdderSimulation.v(113): ignoring unsupported system task
-Warning (10855): Verilog HDL warning at AdderSimulation.v(60): initial value for variable result should be constant
+Warning (10175): Verilog HDL warning at AdderSimulation.v(84): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at AdderSimulation.v(133): ignoring unsupported system task
+Warning (10175): Verilog HDL warning at AdderSimulation.v(85): ignoring unsupported system task
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Warning (10175): Verilog HDL warning at AdderSimulation.v(112): ignoring unsupported system task
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(86): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(108): xi = 0, yi = 0, zi = 0
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(113): 
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(114): Correct\n
+Info (10648): Verilog HDL Display System Task info at AdderSimulation.v(115): Error\n
+Warning (10175): Verilog HDL warning at AdderSimulation.v(122): ignoring unsupported system task
+Warning (10855): Verilog HDL warning at AdderSimulation.v(64): initial value for variable result should be constant
 Info (12128): Elaborating entity "online_adder_r4" for hierarchy "online_adder_r4:uut"
 Warning (10230): Verilog HDL assignment warning at online_adder_r4.v(38): truncated value with size 4 to match size of target (3)
 Warning (10230): Verilog HDL assignment warning at online_adder_r4.v(39): truncated value with size 32 to match size of target (4)
@@ -430,9 +434,9 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
     Info: Peak virtual memory: 479 megabytes
-    Info: Processing ended: Sun Jun 22 19:55:05 2014
+    Info: Processing ended: Mon Jun 23 00:24:33 2014
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

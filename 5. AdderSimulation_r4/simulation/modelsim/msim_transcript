@@ -30,40 +30,14 @@
 # Top level modules:
 # 	tester_r4
 # 
-vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderSimulation
-# vsim +altera -do AdderControl_run_msim_rtl_verilog.do -l msim_transcript -gui work.AdderSimulation 
+# Load canceled
+vsim work.AdderSimulation
+# vsim work.AdderSimulation 
 # Loading work.AdderSimulation
 # Loading work.online_adder_r4
 # Loading work.tester_r4
-# do AdderControl_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/5.\ AdderSimulation_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module AdderSimulation
-# 
-# Top level modules:
-# 	AdderSimulation
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/5.\ AdderSimulation_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module online_adder_r4
-# 
-# Top level modules:
-# 	online_adder_r4
-# vlog -vlog01compat -work work +incdir+C:/Users/Charles/Dropbox/Imperial\ College/Final\ Year\ Project/OnlineArithmetic/5.\ AdderSimulation_r4 {C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module tester_r4
-# 
-# Top level modules:
-# 	tester_r4
-# 
 run -all
-# x =       0, y =       0
+# x =  0  0  0  0  0  0  0, y =  0  0  0  0  0  0  0 
 # xi =  0, yi =  0, zi =  x
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi =  0
@@ -72,10 +46,10 @@ run -all
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi =  0
-# z =       0
+# z =  0  0  0  0  0  0  0 
 # Correct
 # 
-# x =   43719, y =   96978
+# x =  0  1  2 -3  3  0 -1, y =  0  2 -1 -3  3  2  2 
 # xi =  1, yi =  2, zi =  0
 # xi =  2, yi = -1, zi =  1
 # xi = -3, yi = -3, zi = -1
@@ -84,10 +58,10 @@ run -all
 # xi = -1, yi =  2, zi =  2
 # xi =  0, yi =  0, zi =  2
 # xi =  0, yi =  0, zi =  1
-# z =  495249
+# z =  1 -1  0 -1  2  2  1 
 # Correct
 # 
-# x =      86, y =     123
+# x =  0  0  0  0  1  2 -2, y =  0  0  0  0  1 -1  3 
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi =  0
@@ -96,10 +70,10 @@ run -all
 # xi = -2, yi =  3, zi =  2
 # xi =  0, yi =  0, zi =  1
 # xi =  0, yi =  0, zi =  1
-# z =     137
+# z =  0  0  0  0  2  1  1 
 # Correct
 # 
-# x =   37449, y =   37449
+# x =  0  1  1  1  1  1  1, y =  0  1  1  1  1  1  1 
 # xi =  1, yi =  1, zi =  0
 # xi =  1, yi =  1, zi =  0
 # xi =  1, yi =  1, zi =  2
@@ -108,10 +82,10 @@ run -all
 # xi =  1, yi =  1, zi =  2
 # xi =  0, yi =  0, zi =  2
 # xi =  0, yi =  0, zi =  2
-# z =   74898
+# z =  0  2  2  2  2  2  2 
 # Correct
 # 
-# x =   74898, y =   37449
+# x =  0  2  2  2  2  2  2, y =  0  1  1  1  1  1  1 
 # xi =  2, yi =  1, zi =  0
 # xi =  2, yi =  1, zi =  1
 # xi =  2, yi =  1, zi =  0
@@ -120,10 +94,10 @@ run -all
 # xi =  2, yi =  1, zi =  0
 # xi =  0, yi =  0, zi =  0
 # xi =  0, yi =  0, zi = -1
-# z =  262151
+# z =  1  0  0  0  0  0 -1 
 # Correct
 # 
-# x =   74898, y =   74898
+# x =  0  2  2  2  2  2  2, y =  0  2  2  2  2  2  2 
 # xi =  2, yi =  2, zi =  0
 # xi =  2, yi =  2, zi =  1
 # xi =  2, yi =  2, zi =  1
@@ -132,10 +106,10 @@ run -all
 # xi =  2, yi =  2, zi =  1
 # xi =  0, yi =  0, zi =  1
 # xi =  0, yi =  0, zi =  0
-# z =  299592
+# z =  1  1  1  1  1  1  0 
 # Correct
 # 
-# x =  112347, y =  112347
+# x =  0  3  3  3  3  3  3, y =  0  3  3  3  3  3  3 
 # xi =  3, yi =  3, zi =  0
 # xi =  3, yi =  3, zi =  1
 # xi =  3, yi =  3, zi =  3
@@ -144,10 +118,10 @@ run -all
 # xi =  3, yi =  3, zi =  3
 # xi =  0, yi =  0, zi =  3
 # xi =  0, yi =  0, zi =  2
-# z =  374490
+# z =  1  3  3  3  3  3  2 
 # Correct
 # 
-# x =      -1, y =  -42046
+# x = -1 -1 -1 -1 -1 -1 -1, y = -1 -2 -3 -3 -1  0  2 
 # xi = -1, yi = -2, zi =  0
 # xi = -1, yi = -3, zi = -1
 # xi = -1, yi = -3, zi =  0
@@ -156,7 +130,7 @@ run -all
 # xi = -1, yi =  2, zi = -2
 # xi =  0, yi =  0, zi = -1
 # xi =  0, yi =  0, zi =  1
-# z = 1864121
+# z = -1  0 -1  0 -2 -1  1 
 # Correct
 # 
-# Break in Module AdderSimulation at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v line 113
+# Break in Module AdderSimulation at C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v line 122
