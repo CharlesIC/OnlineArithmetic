@@ -1,0 +1,66 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\OnlineArithmetic\5. AdderSimulation_r4\simulation\modelsim
+vAdderSimulation
+IB7^@R;iZ9@jZiI^mBMfEY1
+V>fSZnhS;dOXf3OKYUX<N42
+Z1 dC:\Users\Charles\Dropbox\Imperial College\Final Year Project\OnlineArithmetic\5. AdderSimulation_r4\simulation\modelsim
+w1403463300
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@adder@simulation
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4} -O0
+!i10b 1
+!s100 J]]3Wez9TZ>C>h1W;Tg8Q2
+!s85 0
+!s108 1403463426.007000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v|
+!s101 -O0
+vonline_adder_r4
+I`<4MkcYA3N0>OdDJEelV50
+V@?;5G@A:;<P9B8Gc<ImcI2
+R1
+w1402948135
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 f89AhDzm_1[33_mlaQlaJ2
+!s85 0
+!s108 1403463426.238000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v|
+!s101 -O0
+vtester_r4
+!i10b 1
+!s100 WcMYUO92PNUmQoGXa?=Dj0
+IPSD63nZgUYI83]6C01d<i0
+VIA9AFQ5R9kdHUonoG@?nm3
+R1
+w1403462348
+8C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v
+FC:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1403463426.476000
+!s107 C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4|C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v|
+!s101 -O0
+R3
+R4

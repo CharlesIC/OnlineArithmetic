@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/AdderControl.v
-source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/online_adder_r4.v
-source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/Implementation/Adder_r4_n3/db/AdderControl.cbx.xml
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/AdderControl.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/online_adder_r4.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/1. Adder_r4_n3/db/AdderControl.cbx.xml
 design_name = AdderControl
 instance = comp, \CLOCK_50~input , CLOCK_50~input, AdderControl, 1

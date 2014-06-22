@@ -1,0 +1,103 @@
+|AdderSimulation
+CLOCK_50 => ~NO_FANOUT~
+
+
+|AdderSimulation|online_adder_r4:uut
+clk => zi[0]~reg0.CLK
+clk => zi[1]~reg0.CLK
+clk => zi[2]~reg0.CLK
+clk => w[0].CLK
+clk => w[1].CLK
+clk => w[2].CLK
+reset => zi[0]~reg0.ACLR
+reset => zi[1]~reg0.ACLR
+reset => zi[2]~reg0.ACLR
+reset => w[0].ACLR
+reset => w[1].ACLR
+reset => w[2].ACLR
+en => zi[0]~reg0.ENA
+en => w[2].ENA
+en => w[1].ENA
+en => w[0].ENA
+en => zi[2]~reg0.ENA
+en => zi[1]~reg0.ENA
+xi[0] => Add0.IN4
+xi[1] => Add0.IN3
+xi[2] => Add0.IN1
+xi[2] => Add0.IN2
+yi[0] => Add0.IN8
+yi[1] => Add0.IN7
+yi[2] => Add0.IN5
+yi[2] => Add0.IN6
+zi[0] <= zi[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+zi[1] <= zi[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+zi[2] <= zi[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AdderSimulation|tester_r4:addTest
+testSelect[0] => Decoder0.IN2
+testSelect[0] => Decoder1.IN1
+testSelect[1] => Decoder0.IN1
+testSelect[1] => Decoder1.IN0
+testSelect[2] => Decoder0.IN0
+testSelect[2] => x[16].DATAIN
+testSelect[2] => x[10].DATAIN
+x[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+x[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+x[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+x[9] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+x[10] <= testSelect[2].DB_MAX_OUTPUT_PORT_TYPE
+x[11] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[12] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+x[13] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+x[14] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+x[15] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+x[16] <= testSelect[2].DB_MAX_OUTPUT_PORT_TYPE
+x[17] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= <GND>
+y[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+y[9] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+y[10] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[11] <= x.DB_MAX_OUTPUT_PORT_TYPE
+y[12] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+y[13] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+y[14] <= x.DB_MAX_OUTPUT_PORT_TYPE
+y[15] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+y[16] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[17] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[0] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+z[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+z[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+z[7] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+z[8] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[9] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+z[10] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+z[11] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[12] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+z[13] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+z[14] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[15] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+z[16] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+z[17] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[18] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+z[19] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+z[20] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/button_debouncer.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/SEG7_LUT.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v
+source_file = 1, C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/db/AdderControl.cbx.xml
+design_name = AdderSimulation
+instance = comp, \CLOCK_50~input , CLOCK_50~input, AdderSimulation, 1

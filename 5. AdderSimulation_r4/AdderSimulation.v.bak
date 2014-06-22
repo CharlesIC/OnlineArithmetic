@@ -1,0 +1,98 @@
+module AdderSimulation;
+
+//===================================
+//		Test parameters
+//===================================
+parameter n = 6;						// No. of digits
+parameter c = 3;						// Bits per digit
+parameter delay = 2;
+parameter bits = n * c;
+parameter cycles = n + delay;	
+
+
+//===================================
+//		REG/WIRE declarations
+//===================================
+reg  adder_reset;						// Adder reset signal
+reg  adder_enable;					// Adder enable signal
+
+// Test variables //
+wire signed [c-1:0] zi;
+reg  signed [c-1:0] xi, yi;
+reg  signed [(n+1)*c-1:0] result;
+
+wire signed [n*c-1:0] x, y;
+wire signed [(n+1)*c-1:0] expected;
+
+wire correct = (result == expected);
+
+
+//*********************************
+// 	Adder UUT (Unit Under Test)
+//*********************************
+online_adder_r4 uut(
+	.clk(~clock),
+	.reset(adder_reset),
+	.en(adder_enable),
+	.xi(xi),
+	.yi(yi),
+	.zi(zi)
+);
+
+tester_r4 addTest(
+	.testSelect(SW),
+	.x(x),
+	.y(y),
+	.z(expected)
+);
+
+
+		
+//========================================
+// 			Test process
+//========================================
+reg [9:0] oldTest;
+reg [3:0] i;							// Parametrise size in Java +1
+reg ready;
+
+initial begin
+	i = 0;
+	xi = 0;
+	yi = 0;
+	ready = 1;
+	oldTest = 0;
+	adder_reset = 0;
+	adder_enable = 0;
+end
+
+always @(posedge clock)
+begin
+	if (oldTest != SW || !ready) begin
+		if (ready) begin
+			adder_enable = 0;
+			adder_reset = 1;
+			oldTest = SW;
+			result = 0;
+			ready = 0;
+			i <= 0;
+			end
+		else begin
+			adder_reset = 0;
+			adder_enable = 1;
+			ready = 1;
+			end
+		end
+	else begin
+		if (i < cycles) begin
+			xi = x[c*(n-i)-1-:c];
+			yi = y[c*(n-i)-1-:c];
+			result[c*(n+1-i)+2-:c] = zi;
+			i <= i + 1'b1;
+			end
+		else begin
+			adder_enable <= 0;
+			end
+	end
+end
+
+endmodule
