@@ -1,0 +1,28 @@
+Quartus II Archive log --	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation_tmp_archive.qarlog
+
+Archive:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation_tmp_archive.qar
+Date:		Tue Jun 24 13:25:15 2014
+Quartus II 64-Bit		13.1.4 Build 182 03/12/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderControl.qsf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.qpf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/SEG7_LUT.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/assignment_defaults.qdf
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/button_debouncer.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/db/AdderControl.cmp.hdb
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/db/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/incremental_db/compiled_partitions/AdderControl.db_info
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/online_adder_r4.v
+C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/tester_r4.v
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Jun 24 13:25:17 2014
+Source archive file:	C:/Users/Charles/Dropbox/Imperial College/Final Year Project/OnlineArithmetic/5. AdderSimulation_r4/AdderSimulation_tmp_archive.qar
+Archive was extracted into	C:/Users/Charles/Desktop/AddSimTest/
+		 - successfully.
